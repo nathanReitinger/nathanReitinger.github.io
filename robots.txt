@@ -1,0 +1,27 @@
+# robots.txt for nathanreitinger.github.io
+#
+# This is the authoritative robots.txt for this host. Crawlers read robots.txt
+# per origin, at the root, so this file governs every project page published
+# under nathanreitinger.github.io -- a robots.txt inside a project directory is
+# not consulted by anything.
+#
+# Policy: crawling is permitted, except by xAI / Grok.
+#
+# xAI publishes no clear crawler reference and third-party trackers disagree
+# about the token, so every candidate is listed. Be aware that robots.txt is a
+# request rather than a control: independent reports say xAI's fetcher does not
+# send these tokens and presents itself as an ordinary browser, in which case
+# this has no effect. Enforcing it would require server-side blocking, which
+# GitHub Pages does not provide.
+
+User-agent: GrokBot
+User-agent: Grok
+User-agent: Grok-DeepSearch
+User-agent: xAI-Bot
+User-agent: xAI-Grok
+User-agent: xai-bot
+Disallow: /
+
+User-agent: *
+Allow: /
+Crawl-delay: 1
